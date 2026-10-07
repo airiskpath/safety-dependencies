@@ -1,0 +1,86 @@
+# Family: capability — "the model cannot do it yet". Lever: the AI laboratories.
+family: capability
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-01
+    lock: "application workflows create a clear exploration barrier for current agents"
+    type: capability
+    harm: "expanding an initial foothold into broad internal compromise across enterprise hosts"
+    lock_source:
+      ref: "Liu F. et al., AgentCyberRange: Benchmarking Frontier AI Systems in Realistic Cyber Ranges, arXiv:2606.14295v2"
+      date: 2026-06-12
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-06-16
+    state_source: >-
+      Same paper, v2: the barrier is reported as current for the six frontier systems evaluated.
+      No later publication found that reports it cleared, as of 2026-09-26.
+    lever_holder: "the AI laboratories"
+    what_would_lift_it: >-
+      A published evaluation in which an agent reaches vulnerable endpoints without route-level
+      hints, at a rate comparable to its rate when given them.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      The source also reports a finding that names a way through rather than what blocks. It is
+      not admitted and not retained: we never publish a way through.
+
+  - id: VR-02
+    lock: "could not complete the operational-technology cyber range; the model got stuck on IT sections"
+    type: capability
+    harm: "disruption of physical processes in a simulated power plant (industrial control systems)"
+    lock_source:
+      ref: "AI Security Institute (UK), Our evaluation of Claude Mythos Preview's cyber capabilities"
+      date: 2026-04-13
+      nature: primary
+      self-interested: no
+      licence: "not stated on the page"
+    state_as_of: 2026-05-14
+    state_source: >-
+      LIFTED. AI Security Institute (UK), "How fast is autonomous AI cyber capability advancing?":
+      "the newer Mythos Preview checkpoint completed both our cyber ranges, solving [...] the
+      previously unsolved 'Cooling Tower' in 3 of 10 attempts. This was the first time that a model
+      completed the second of our two cyber ranges."
+    lever_holder: "the AI laboratories"
+    what_would_lift_it: "Already lifted — a model completing the range end to end."
+    required_caveat: >-
+      Ranges without active defenders and without penalty for triggering alerts; the institute
+      states it cannot say whether the same model would succeed against well-defended systems.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Retained deliberately although lifted: a snapshot that shows what has just fallen is more
+      informative than one that erases it. Time from published lock to
+      published lift: about one month.
+
+  - id: VR-11
+    lock: >-
+      "a long chain of CI/CD pipeline attacks requiring the agent to discover credentials,
+      manipulate build configurations, and deploy backdoored artifacts across multiple systems"
+    type: capability
+    harm: "theft of sensitive data from a protected internal database, via full corporate network takeover"
+    lock_source:
+      ref: "Folkerts L. et al., Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios, arXiv:2603.11214v3"
+      date: 2026-03-11
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-04-13
+    state_source: >-
+      LIFTED. AI Security Institute (UK), evaluation of Claude Mythos Preview: "Claude Mythos
+      Preview is the first model to solve TLO from start to finish, in 3 out of its 10 attempts."
+      The range being completed end to end, this bottleneck no longer holds.
+    lever_holder: "the AI laboratories"
+    what_would_lift_it: "Already lifted — the range completed end to end."
+    required_caveat: >-
+      Ranges without active defenders and without penalty for triggering alerts; the institute
+      states it cannot say whether the same model would succeed against well-defended systems.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Time from published lock to published lift: about one month. Two further bottlenecks in the
+      same range were lifted in the same period; they are not listed
+      separately, being the same harm and lifted by the same event.

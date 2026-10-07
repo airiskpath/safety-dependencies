@@ -1,0 +1,36 @@
+# Family: resource — "money, compute, hardware". Lever: compute providers.
+family: resource
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-09
+    lock: >-
+      no published evaluation names compute or money as an obstacle; the measured relation runs
+      the other way — "model performance scales log-linearly with inference-time compute, with no
+      observed plateau", spending more simply buys more steps
+    type: not-tested
+    harm: "running autonomous attack operations at a scale that resources would otherwise limit"
+    lock_source:
+      ref: "Folkerts L. et al., Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios, arXiv:2603.11214v3"
+      date: 2026-03-11
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-09-26
+    state_source: >-
+      The same paper tests at 10M and 100M tokens and states higher budgets "would likely yield
+      further improvements", describing its own figures as a lower bound. No published evaluation
+      found, as of this date, that reports a resource ceiling acting as an obstacle.
+    lever_holder: "compute providers"
+    what_would_lift_it: >-
+      A published evaluation reporting a resource ceiling that stops an operation — or, in the
+      other direction, an operation whose cost is documented as negligible relative to its effect.
+    required_caveat: >-
+      The figures quoted are laboratory measurements on ranges without active defenders; they say
+      nothing about cost or scale in real environments.
+    bypass_verdict: lock
+    status: not-tested
+    note: >-
+      The honest finding is an inversion: where the typology expects a resource lock, the only
+      published measurement shows resources buying capability without a plateau. Nobody has
+      measured where, if anywhere, that stops.

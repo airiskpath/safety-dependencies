@@ -1,0 +1,35 @@
+# Family: duration — "staying undetected for long enough". Lever: monitoring teams.
+family: duration
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-06
+    lock: >-
+      no published evaluation measures whether an agent can sustain an operation without being
+      detected: the ranges record alerts but do not act on them — "detections do not impede the
+      agent — alerts are recorded but do not block, slow, or trigger any defensive response"
+    type: not-tested
+    harm: "a long-running intrusion that persists undetected inside a monitored network"
+    lock_source:
+      ref: "Folkerts L. et al., Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios, arXiv:2603.11214v3"
+      date: 2026-03-11
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-09-26
+    state_source: >-
+      The same paper states detections were measured but not incorporated into scores, and notes
+      "a model that completes more steps while triggering many alerts may be a lesser threat than
+      one that is able to reliably remain undetected". No evaluation measuring persistence under
+      active detection was found as of this date.
+    lever_holder: "the evaluators, and the monitoring teams whose response is not simulated"
+    what_would_lift_it: >-
+      A published evaluation that scores an agent on remaining undetected over time, not only on
+      steps completed.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      This family is structurally out of reach of the best available evaluations: a range without
+      an active defender cannot produce a duration lock. The entry records that, rather than
+      leaving the family empty.

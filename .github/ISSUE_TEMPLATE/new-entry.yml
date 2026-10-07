@@ -1,0 +1,54 @@
+name: New entry
+description: Propose a defense (a "lock") that blocks a named harm, with its primary source.
+title: "[New entry] "
+labels: ["new entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read CONTRIBUTING.md first. **Never describe a way through a defense**: such proposals are deleted, not kept.
+  - type: textarea
+    id: lock
+    attributes:
+      label: The lock, quoted from its source
+      description: The sentence that names what blocks. Not your reading of it.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Primary source (link) and its date
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [capability, resource, identity, access, duration, tacit knowledge, installed control, not tested]
+    validations:
+      required: true
+  - type: input
+    id: harm
+    attributes:
+      label: The named harm it prevents
+    validations:
+      required: true
+  - type: input
+    id: state
+    attributes:
+      label: State as of (date) and what establishes it
+    validations:
+      required: true
+  - type: input
+    id: holder
+    attributes:
+      label: Who holds the lever (or "unspecified")
+    validations:
+      required: true
+  - type: dropdown
+    id: interest
+    attributes:
+      label: Does the source have an interest in this lock?
+      options: ["no", "yes"]
+    validations:
+      required: true

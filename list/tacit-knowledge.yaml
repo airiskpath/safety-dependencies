@@ -1,0 +1,36 @@
+# Family: tacit knowledge — "know-how absent from the texts". Lever: nobody, it is structural.
+family: tacit-knowledge
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-07
+    lock: >-
+      "specialist knowledge gaps" listed among the models' remaining failure modes, alongside
+      information tracking errors and long action sequence execution
+    type: not-tested
+    harm: "autonomous completion of attack phases requiring reverse engineering, cryptography and malware development"
+    lock_source:
+      ref: "Folkerts L. et al., Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios, arXiv:2603.11214v3 (§5 Limitations)"
+      date: 2026-03-11
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-03-17
+    state_source: >-
+      PARTIALLY LIFTED at the milestone where it was first measured. The same paper: performance
+      "drops sharply after milestone 4, which marks the transition [...] to attack phases requiring
+      specialist knowledge in reverse engineering, cryptography, and malware development", but
+      "Opus 4.6 is the first model to consistently push well past this barrier". The gap is
+      nonetheless still listed as a residual failure mode in the same paper.
+    lever_holder: unspecified
+    what_would_lift_it: >-
+      A published evaluation reporting that specialist knowledge no longer appears among residual
+      failure modes at the phases concerned.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: not-tested
+    note: >-
+      Type is `not-tested` by rule, not by judgement: both `capability` and `tacit-knowledge` fit
+      this lock, and the format rule requires a single type — two candidates means `not-tested`,
+      and the question is escalated. `lever_holder` is `unspecified` because the source names the
+      gap without saying who could close it; guessing it would make the entry unpublishable.

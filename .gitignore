@@ -1,0 +1,5 @@
+trend/cache/
+trend/out/
+__pycache__/
+.pytest_cache/
+trend/data/cache/

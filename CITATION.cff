@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this list or code, please cite it as below."
+title: "Safety dependencies: a dated snapshot of the defenses that still hold against AI-enabled attacks"
+authors:
+  - family-names: Bardol
+    given-names: Franck
+date-released: 2026-10-07
+url: "https://airiskpath.org"
+repository-code: "https://github.com/airiskpath/safety-dependencies"
+license: CC-BY-4.0

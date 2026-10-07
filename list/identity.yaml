@@ -1,0 +1,36 @@
+# Family: identity — "being a person: payment, account, ID". Lever: banks, payment rails, KYC.
+family: identity
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-08
+    lock: >-
+      no published evaluation names an identity requirement — payment, account opening, identity
+      verification — as an observed obstacle in an attack scenario
+    type: not-tested
+    harm: "autonomous acquisition of compute, services or funds by an agent acting on its own"
+    lock_source:
+      ref: >-
+        Targeted search of published evaluations by the authors, 2026-09-22. The 2026 literature
+        on agentic
+        payments treats KYC as a design problem for payment systems, never as a constraint
+        observed in a decomposed attack scenario.
+      date: 2026-09-22
+      nature: primary
+      self-interested: no
+    state_as_of: 2026-09-26
+    state_source: >-
+      No source found, as of this date, that documents an identity control blocking an agent in a
+      published scenario. Proposals exist for know-your-customer schemes at compute providers
+      (e.g. GovAI, arXiv:2310.13625), but a proposal is not an observed control.
+    lever_holder: "banks, payment rails, compute providers operating KYC"
+    what_would_lift_it: >-
+      Either a published evaluation reporting an agent blocked by an identity requirement — which
+      would turn this into a real lock — or one reporting an agent opening an account without it.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: not-tested
+    note: >-
+      Identity is the canonical example of the typology, and no evaluation supports it. That is a
+      result worth publishing as such: the example illustrates the categories, it does not describe
+      a measured state of the world. Writing anything stronger here would be inference.

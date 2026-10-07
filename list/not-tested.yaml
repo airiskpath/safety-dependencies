@@ -1,0 +1,36 @@
+# Family: not tested — "may already be possible, nobody has checked". Lever: the evaluators.
+# The eighth category is not a residue: it is the answer wherever the world is silent, and it is
+# the most frequent answer in this snapshot.
+family: not-tested
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-10
+    lock: >-
+      the behaviours that distinguish the highest-risk actors — using AI to orchestrate steps in
+      the attack chain sequentially, make real-time decisions, and execute without human
+      intervention — "are not yet included as attacker techniques in the MITRE ATT&CK framework"
+    type: not-tested
+    harm: "AI-orchestrated intrusion whose distinguishing features no standard framework records"
+    lock_source:
+      ref: "Anthropic, What we learned mapping a year's worth of AI-enabled cyber threats"
+      date: 2026-06-03
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-06-03
+    state_source: >-
+      Same report, based on 832 accounts banned for malicious cyber activity between March 2025 and
+      March 2026, mapped onto MITRE ATT&CK.
+    lever_holder: "MITRE, which maintains the framework, and the evaluators who feed it"
+    what_would_lift_it: >-
+      A released version of ATT&CK that includes techniques for autonomous orchestration of an
+      attack chain.
+    required_caveat: >-
+      Self-interested source: the provider analyses misuse of its own model, and nobody else can
+      observe that population.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      This is a lock on the measuring instrument, not on the attacker. It is admitted because the
+      source names it explicitly and because a missing category is what keeps this harm unmeasured.

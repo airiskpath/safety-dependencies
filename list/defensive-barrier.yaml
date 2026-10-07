@@ -1,0 +1,60 @@
+# Family: defensive barrier — "an existing control prevents it". Lever: whoever maintains it.
+family: defensive-barrier
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-04
+    lock: >-
+      account termination by the provider, which ended the observed operations: accounts were
+      banned and threat information shared with public- and private-sector partners
+    type: defensive-barrier
+    harm: "sustained AI-assisted intrusion, espionage and procurement operations"
+    lock_source:
+      ref: "Anthropic, Countering misuse of AI: September 2026 (threat intelligence report)"
+      date: 2026-09-10
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-09-10
+    state_source: >-
+      Same report, covering activity from December 2025 to August 2026: the provider states it
+      detected and banned the accounts involved in the cases described.
+    lever_holder: "the model providers, who operate detection and termination"
+    what_would_lift_it: >-
+      A documented case of an operation of comparable scale running to completion on a provider's
+      platform without detection or termination.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Self-interested source, and the strongest possible one on its own enforcement — nobody else
+      can observe it. The same report describes how some actors got around
+      access restrictions; that names a way through and is not retained.
+
+  - id: VR-05
+    lock: >-
+      "we cannot say for sure whether Mythos Preview would be able to attack well-defended
+      systems" — the evaluation ranges have no active defenders and no penalty for raising alerts
+    type: not-tested
+    harm: "autonomous compromise of an enterprise network that is actively defended"
+    lock_source:
+      ref: "Folkerts L. et al., Measuring AI Agents' Progress on Multi-Step Cyber Attack Scenarios, arXiv:2603.11214v3 (§5 Limitations); AI Security Institute (UK), evaluation of Claude Mythos Preview"
+      date: 2026-03-11
+      nature: primary
+      self-interested: no
+      licence: CC BY 4.0
+    state_as_of: 2026-09-26
+    state_source: >-
+      No published evaluation on a range with active monitoring, endpoint detection and real-time
+      incident response was found as of this date. The institute states such ranges are future work.
+    lever_holder: "the evaluators"
+    what_would_lift_it: >-
+      A published evaluation on a hardened range with active monitoring and real-time incident
+      response, reporting the success rate obtained.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Type is `not-tested`: this entry does not assert that defended systems hold. It asserts that
+      nobody has measured it. That is the eighth category of the typology, and it is the honest
+      answer here.

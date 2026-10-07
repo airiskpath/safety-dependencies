@@ -1,0 +1,33 @@
+# Family: access — "a privileged access is out of reach". Lever: infrastructure operators.
+family: access
+state_as_of: 2026-09-26
+entries:
+
+  - id: VR-03
+    lock: "access controls for trusted users, with exemptions to classifier guards"
+    type: access
+    harm: >-
+      obtaining, from a frontier model, significant uplift toward creating or deploying chemical
+      or biological weapons
+    lock_source:
+      ref: "Anthropic, Frontier Safety Roadmap — capabilities and mitigations"
+      date: 2026-02-22
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-09-26
+    state_source: >-
+      Same page, consulted 2026-09-26: "We plan to maintain or improve these protections for
+      relevant models", ASL-3 protections stated as current for the models concerned.
+    lever_holder: "the provider (Anthropic), which sets and can relax these controls"
+    what_would_lift_it: >-
+      A published statement by the provider that these access controls no longer apply to models at
+      this capability level, or a documented case of the guarded capability being obtained through
+      the product surface.
+    required_caveat: ""
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Self-interested source: the provider describes its own controls, and no independent party
+      verifies them. Admitted as a declared control, marked as such, and it cannot
+      be the only support of a claim.
