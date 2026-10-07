@@ -1,3 +1,5 @@
+<img src="docs/logo.svg" alt="AI-RISKPATH" width="64" align="right">
+
 # Safety dependencies
 
 **What still blocks attacks carried out with AI, who holds it, and since when.**
