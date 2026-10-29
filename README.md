@@ -29,10 +29,12 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | Installed control | Account termination by the provider, which ended observed intrusion and espionage operations *(source: the provider itself)* | Model providers | 🟢 holds |
 | Duration | Nobody has measured whether an agent can run a long operation undetected | Evaluators | ⚪ not tested |
 | Tacit knowledge | Gaps in specialist knowledge, still listed among model failures, already partly overcome | Not specified by the source | ⚪ not tested |
-| Identity | No published evaluation shows an identity, payment or account requirement blocking an agent | Banks, payment rails, compute providers | ⚪ not tested |
+| Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); current state not established. *Corrected 28 October 2026* | Banks, payment rails, compute providers | ⚪ not tested |
 | Resource | No evaluation shows compute or money as a limit; more compute buys more steps, no plateau observed | Compute providers | ⚪ not tested |
 | Not tested | Nobody has measured an autonomous attack against an actively defended network | Evaluators | ⚪ not tested |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
+
+**Correction, 28 October 2026.** The Identity entry (VR-08) previously stated that no published evaluation showed an identity requirement blocking an agent. That was wrong: the UK AI Security Institute's RepliBench evaluation has shown it since 2025, and our search had missed it. The entry is corrected under the same identifier, so the correction stays visible.
 
 **The most frequent answer is "not tested": nobody has checked.** Nobody else publishes that, and it is the most useful line in the list. Lifted locks stay in: a list that shows what has just fallen says more than one that erases it.
 

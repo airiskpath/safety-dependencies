@@ -25,8 +25,8 @@ entries:
     bypass_verdict: lock
     status: admitted
     note: >-
-      The source also reports a finding that names a way through rather than what blocks. It is
-      not admitted and not retained: we never publish a way through.
+      One further finding in the same source names a way through rather than what blocks. It is
+      therefore not admitted and not retained, and it is not described here.
 
   - id: VR-02
     lock: "could not complete the operational-technology cyber range; the model got stuck on IT sections"
@@ -53,8 +53,8 @@ entries:
     status: admitted
     note: >-
       Retained deliberately although lifted: a snapshot that shows what has just fallen is more
-      informative than one that erases it. Time from published lock to
-      published lift: about one month.
+      informative than one that erases it. Time from published lock to published lift: about one
+      month.
 
   - id: VR-11
     lock: >-
@@ -82,5 +82,5 @@ entries:
     status: admitted
     note: >-
       Time from published lock to published lift: about one month. Two further bottlenecks in the
-      same range were lifted in the same period; they are not listed
-      separately, being the same harm and lifted by the same event.
+      same range were lifted in the same period; they are not listed separately, being the same
+      harm and lifted by the same event.

@@ -28,8 +28,8 @@ entries:
     status: admitted
     note: >-
       Self-interested source, and the strongest possible one on its own enforcement — nobody else
-      can observe it. The same report describes how some actors got around
-      access restrictions; that names a way through and is not retained.
+      can observe it. One further finding in the same report names a way through rather than what
+      blocks; it is not retained, and it is not described here.
 
   - id: VR-05
     lock: >-

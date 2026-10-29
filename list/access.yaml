@@ -29,5 +29,5 @@ entries:
     status: admitted
     note: >-
       Self-interested source: the provider describes its own controls, and no independent party
-      verifies them. Admitted as a declared control, marked as such, and it cannot
-      be the only support of a claim.
+      verifies them. A control declared by the party that operates it is admitted, marked as such,
+      and it cannot be the only support of a claim.
