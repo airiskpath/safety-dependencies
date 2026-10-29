@@ -1,6 +1,6 @@
 # Family: access — "a privileged access is out of reach". Lever: infrastructure operators.
 family: access
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-03
@@ -15,10 +15,14 @@ entries:
       nature: primary
       self-interested: yes
       licence: "not stated on the page"
-    state_as_of: 2026-09-26
+    state_as_of: 2026-10-29
     state_source: >-
-      Same page, consulted 2026-09-26: "We plan to maintain or improve these protections for
-      relevant models", ASL-3 protections stated as current for the models concerned.
+      Same page: "We plan to maintain or improve these protections for relevant models", ASL-3
+      protections stated as current for the models concerned. The roadmap was updated on
+      2026-10-19, after the date of our source; its additions cover datacenter physical security,
+      platform security, two policy objectives and an automated detection system for offensive
+      use, and none of them removes the access controls named here. No documented case was found,
+      as of this date, of the guarded capability being obtained through the product surface.
     lever_holder: "the provider (Anthropic), which sets and can relax these controls"
     what_would_lift_it: >-
       A published statement by the provider that these access controls no longer apply to models at

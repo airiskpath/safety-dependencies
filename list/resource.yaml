@@ -1,6 +1,6 @@
 # Family: resource — "money, compute, hardware". Lever: compute providers.
 family: resource
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-09
@@ -16,11 +16,13 @@ entries:
       nature: primary
       self-interested: no
       licence: CC BY 4.0
-    state_as_of: 2026-09-26
+    state_as_of: 2026-10-29
     state_source: >-
       The same paper tests at 10M and 100M tokens and states higher budgets "would likely yield
       further improvements", describing its own figures as a lower bound. No published evaluation
-      found, as of this date, that reports a resource ceiling acting as an obstacle.
+      found, as of this date (monthly pass), in either direction: none reporting a resource ceiling
+      that stops an operation, and none documenting an operation's cost as negligible relative to
+      its effect.
     lever_holder: "compute providers"
     what_would_lift_it: >-
       A published evaluation reporting a resource ceiling that stops an operation — or, in the

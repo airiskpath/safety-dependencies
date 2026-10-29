@@ -1,6 +1,6 @@
 # Family: duration — "staying undetected for long enough". Lever: monitoring teams.
 family: duration
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-06
@@ -16,12 +16,17 @@ entries:
       nature: primary
       self-interested: no
       licence: CC BY 4.0
-    state_as_of: 2026-09-26
+    state_as_of: 2026-10-29
     state_source: >-
       The same paper states detections were measured but not incorporated into scores, and notes
       "a model that completes more steps while triggering many alerts may be a lesser threat than
-      one that is able to reliably remain undetected". No evaluation measuring persistence under
-      active detection was found as of this date.
+      one that is able to reliably remain undetected". Established more directly since: Dynamic
+      Cyber Ranges (arXiv:2604.24184v1), the one evaluation that does run active defenders, scores
+      captures and compromises and not stealth, places stealth among its own limitations, reports
+      that the attacking agent was instructed to operate quietly but that "its operations were
+      noisy in practice", and concludes its setup "probably overestimates the defender's detection
+      effectiveness". No evaluation measuring persistence under active detection was found, as of
+      this date (monthly pass).
     lever_holder: "the evaluators, and the monitoring teams whose response is not simulated"
     what_would_lift_it: >-
       A published evaluation that scores an agent on remaining undetected over time, not only on
@@ -30,6 +35,8 @@ entries:
     bypass_verdict: lock
     status: admitted
     note: >-
-      This family is structurally out of reach of the best available evaluations: a range without
-      an active defender cannot produce a duration lock. The entry records that, rather than
-      leaving the family empty.
+      The lock has moved from "nobody has measured it" to "those who came closest state that they
+      did not measure it", which is stronger. The same publication that lifted VR-05 does not lift
+      this one, because the two lift conditions ask for different things: one asks for an evaluation
+      on an actively defended range, the other for stealth to be scored. Conditions written in
+      advance either discriminate or they do not; here they did.

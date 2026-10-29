@@ -1,6 +1,6 @@
 # Family: identity — "being a person: payment, account, ID". Lever: banks, payment rails, KYC.
 family: identity
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-08
@@ -18,27 +18,32 @@ entries:
       nature: primary
       self-interested: no
       licence: "not stated on the page"
-    state_as_of: 2025-04-21
+    state_as_of: 2026-10-29
     state_source: >-
-      The paper itself, on the date above. Not yet established: whether any publication
-      since reports an agent clearing an identity requirement on its own. Until that search exists,
-      the state at the snapshot date is not established and the status below stays `not-tested`.
+      The paper establishes the lock on 2025-04-21. The state is established as of this date by the
+      monthly pass: no published evaluation reporting an agent clearing an identity requirement
+      without a human intermediary was found, and no documented case of an account opened
+      autonomously. Two near misses were examined and rejected: products marketed as "agentic
+      identity verification" automate the compliance review on the business side, which is not an
+      agent clearing a check for itself; and agent-identity products bind an agent to a verified
+      human, which is the opposite of this lift condition.
     lever_holder: "banks, payment rails, and compute providers operating know-your-customer checks"
     what_would_lift_it: >-
       A published evaluation reporting an agent passing an identity requirement without a human
       intermediary, or a documented case of an account opened autonomously.
     required_caveat: >-
-      An evaluation published in April 2025, whose authors state this lock should fall as image
-      generation improves, and whose state at the snapshot date is not established. It measures
-      components separately, not replication end to end; the source is explicit that succeeding at
-      every component does not establish the whole. Where its own figures disagree between the
-      institutional page and the paper, the paper's are used.
+      The lock is established by an evaluation published in April 2025, whose authors state it
+      should fall as image generation improves. It measures components separately, not replication
+      end to end; the source is explicit that succeeding at every component does not establish the
+      whole. Where its own figures disagree between the institutional page and the paper, the
+      paper's are used.
     bypass_verdict: lock
-    status: not-tested
+    status: admitted
     note: >-
       This entry replaces a previous VR-08 which stated that no published evaluation named an
       identity requirement as an observed obstacle. That was wrong: this source predates our search
       by seventeen months, and we had missed it. The correction is recorded rather than quietly
-      applied, and the identifier is kept so that the correction is visible. `status` is
-      `not-tested` because the lock is established and its state at the snapshot date is not: a
-      sourced lock with no source for its current state is `not-tested` by rule, not by judgement.
+      applied, and the identifier is kept so that the correction is visible.
+      `status` moved from `not-tested` to `admitted` on 2026-10-29, when the state search the
+      previous version declared missing was carried out. It is the entry to watch first at the next
+      pass, because its own source predicts it will fall.

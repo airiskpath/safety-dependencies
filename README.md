@@ -18,18 +18,20 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | ➕ **Know a defense we missed?** | [Propose a new entry](../../issues/new?template=new-entry.yml) |
 | 🧮 **Check our numbers** | `cd trend && make tendance` — one command, same figures. See [`trend/`](trend/) |
 
-## The list, as of 26 September 2026
+## The list, as of 29 October 2026
 
 | Family | The defense | Who holds it | State |
 |---|---|---|---|
 | Capability | Application workflows still slow down agents trying to extend a foothold across a corporate network | The labs | 🟢 holds |
+| Capability | A model capable enough to copy itself is still too large to run on the devices it would target: “the floor and ceiling don't intersect” (lab demonstration, nothing observed outside the lab; *source: the lab itself*). *New 29 October 2026* | The labs | 🟢 holds |
 | Capability | The long chain of steps in a simulated corporate attack scenario | The labs | 🔴 lifted in April |
 | Capability | A simulated industrial network, where the stake is disrupting a physical process | The labs | 🔴 lifted in May |
 | Access | Access controls reserved for trusted users, against help with chemical or biological weapons *(source: the provider itself)* | The provider | 🟢 holds |
 | Installed control | Account termination by the provider, which ended observed intrusion and espionage operations *(source: the provider itself)* | Model providers | 🟢 holds |
+| Installed control | When an agent hides a message in an image, the agent decoding it leaves a visible trace in its tool calls, provided it has to analyse the rendered image (lab only, defense not yet measured). *New 29 October 2026* | Those who monitor their agents' tool calls | 🟢 holds |
 | Duration | Nobody has measured whether an agent can run a long operation undetected | Evaluators | ⚪ not tested |
 | Tacit knowledge | Gaps in specialist knowledge, still listed among model failures, already partly overcome | Not specified by the source | ⚪ not tested |
-| Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); current state not established. *Corrected 28 October 2026* | Banks, payment rails, compute providers | ⚪ not tested |
+| Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); as of 29 October, no publication reports an agent passing it on its own. *Corrected 28 October 2026* | Banks, payment rails, compute providers | 🟢 holds |
 | Resource | No evaluation shows compute or money as a limit; more compute buys more steps, no plateau observed | Compute providers | ⚪ not tested |
 | Not tested | Nobody had measured an autonomous attack against an actively defended network; a first study did in April 2026 (self-interested source, preprint): the attacker's success drops sharply. *Corrected 29 October 2026* | Evaluators | 🔴 lifted in April |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
@@ -38,7 +40,7 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 
 **Correction, 28 October 2026.** The Identity entry (VR-08) previously stated that no published evaluation showed an identity requirement blocking an agent. That was wrong: the UK AI Security Institute's RepliBench evaluation showed it in 2025, and our search had missed it. The entry is corrected under the same identifier, so the correction stays visible.
 
-**The most frequent answer is "not tested": nobody has checked.** Nobody else publishes that, and it is the most useful line in the list. Lifted locks stay in: a list that shows what has just fallen says more than one that erases it.
+**"Not tested" means nobody has checked.** Nobody else publishes that, and it is among the most useful lines in the list. Lifted locks stay in: a list that shows what has just fallen says more than one that erases it.
 
 ## What this is not
 

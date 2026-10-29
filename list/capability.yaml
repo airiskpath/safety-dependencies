@@ -1,6 +1,6 @@
 # Family: capability — "the model cannot do it yet". Lever: the AI laboratories.
 family: capability
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-01
@@ -13,10 +13,13 @@ entries:
       nature: primary
       self-interested: no
       licence: CC BY 4.0
-    state_as_of: 2026-06-16
+    state_as_of: 2026-10-29
     state_source: >-
-      Same paper, v2: the barrier is reported as current for the six frontier systems evaluated.
-      No later publication found that reports it cleared, as of 2026-09-26.
+      Same paper, v2 and still the latest version: the barrier is reported as current for the six
+      frontier systems evaluated. No later publication found that reports it cleared, as of this
+      date (monthly pass); the agent-exploitation benchmarks published in the meantime all predate
+      this entry and report agents failing to chain the steps, especially under defensive
+      conditions.
     lever_holder: "the AI laboratories"
     what_would_lift_it: >-
       A published evaluation in which an agent reaches vulnerable endpoints without route-level
@@ -84,3 +87,49 @@ entries:
       Time from published lock to published lift: about one month. Two further bottlenecks in the
       same range were lifted in the same period; they are not listed separately, being the same
       harm and lifted by the same event.
+
+  - id: VR-12
+    lock: >-
+      a "model capabilities floor" — the level a replicator must exceed to chain its replication
+      reliably — together with a "model size ceiling" — the size it must stay under to run on the
+      hardware it targets: "Right now, the floor and ceiling don't intersect"
+    type: capability
+    harm: "autonomous self-replication of a model across low-cost consumer hardware, with no datacenter"
+    lock_source:
+      ref: >-
+        Anthropic Frontier Red Team (Zhou W., Freeman D.), AI models may be capable of
+        self-replicating without access to a datacenter
+      date: 2026-10-12
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-10-12
+    state_source: >-
+      Same post. In the simplified evaluation, one tested model completes the full replication
+      chain and the others "fail reliably"; models of 30 billion parameters and under already
+      succeed at many individual steps but "make mistakes composing them end to end". Access to a
+      frontier model as an adviser does not measurably help. The post's conclusion is titled
+      "Signs of life" and states there is no fully autonomous replicator yet.
+    lever_holder: "the AI laboratories, which set both the capability level and the sizes released"
+    what_would_lift_it: >-
+      A published evaluation in which a model small enough to run on the target hardware completes
+      the replication chain end to end, in conditions where the offensive side is not neutralised.
+    required_caveat: >-
+      The evaluation makes the offensive side trivial, which the source itself calls an upper bound
+      on real-world success; its "end of 2026" date is a projection from a general capability index
+      that the source states is only a proxy for replication ability; and nothing was observed
+      outside the laboratory. Self-interested source.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Self-interested source, and three facts are worth stating rather than any intent: the only
+      model shown completing the chain is a third party's open-weights model, not the publisher's;
+      the publisher's own model appears in the role of the adviser that does not help, which is the
+      post's negative result; and neither code nor data is published, so no third party can check
+      it. Further obstacles named by the source — speed, the reachable population of accelerator
+      hardware, the network signature left by a replicator — are not listed separately here, and
+      the hardware access routes it describes are deliberately absent. An independent evaluation,
+      RepliBench (AI Security Institute, UK, April 2025, arXiv:2504.18565v1), names one further
+      obstacle on this same harm and under this same lever: setting up a robust, persistent
+      deployment from scratch. It is recorded here rather than listed separately, the harm and the
+      lever holder being those of this entry.

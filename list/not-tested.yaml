@@ -2,7 +2,7 @@
 # The eighth category is not a residue: it is the answer wherever the world is silent, and it is
 # the most frequent answer in this snapshot.
 family: not-tested
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-10
@@ -18,10 +18,16 @@ entries:
       nature: primary
       self-interested: yes
       licence: "not stated on the page"
-    state_as_of: 2026-06-03
+    state_as_of: 2026-10-29
     state_source: >-
       Same report, based on 832 accounts banned for malicious cyber activity between March 2025 and
-      March 2026, mapped onto MITRE ATT&CK.
+      March 2026, mapped onto MITRE ATT&CK. Tested against a new release since: ATT&CK v20, of
+      2026-10-13, adds AI techniques — AI-assisted exfiltration, direct and indirect prompt
+      injection, result poisoning, anti-automation evasion, impairing autonomous defences — and
+      none of them describes an agent orchestrating an attack chain on its own. Verified on the
+      closest one, AI-assisted exfiltration (T1700): there the agent is an enterprise agent
+      manipulated by an adversary into a single action, the tool rather than the orchestrator. The lock holds
+      against a published version, as of this date, and no longer merely for want of a new one.
     lever_holder: "MITRE, which maintains the framework, and the evaluators who feed it"
     what_would_lift_it: >-
       A released version of ATT&CK that includes techniques for autonomous orchestration of an

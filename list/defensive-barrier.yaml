@@ -1,6 +1,6 @@
 # Family: defensive barrier — "an existing control prevents it". Lever: whoever maintains it.
 family: defensive-barrier
-state_as_of: 2026-09-26
+state_as_of: 2026-10-29
 entries:
 
   - id: VR-04
@@ -15,10 +15,12 @@ entries:
       nature: primary
       self-interested: yes
       licence: "not stated on the page"
-    state_as_of: 2026-09-10
+    state_as_of: 2026-10-29
     state_source: >-
       Same report, covering activity from December 2025 to August 2026: the provider states it
-      detected and banned the accounts involved in the cases described.
+      detected and banned the accounts involved in the cases described. It remains the most recent
+      in that series, and no documented case was found, as of this date (monthly pass), of an
+      operation of comparable scale running to completion without detection or termination.
     lever_holder: "the model providers, who operate detection and termination"
     what_would_lift_it: >-
       A documented case of an operation of comparable scale running to completion on a provider's
@@ -43,18 +45,85 @@ entries:
       nature: primary
       self-interested: no
       licence: CC BY 4.0
-    state_as_of: 2026-09-26
+    state_as_of: 2026-04-27
     state_source: >-
-      No published evaluation on a range with active monitoring, endpoint detection and real-time
-      incident response was found as of this date. The institute states such ranges are future work.
+      LIFTED. Mayoral-Vilches V., Sanz-Gómez M., Balassone F., Del Mundo De Torres M., Nicolaou G.,
+      Rodriguez Borines S., Graziano A., Zabalegui P., Gil-Uriarte E., Dynamic Cyber Ranges,
+      arXiv:2604.24184v1: defender agents harden the systems, "monitor for intrusions and respond
+      in real time" against an attacking agent, and the attacker's success rate is reported —
+      brought to between 0 and 55 % depending on the scenario, with complete prevention in several
+      configurations.
     lever_holder: "the evaluators"
     what_would_lift_it: >-
-      A published evaluation on a hardened range with active monitoring and real-time incident
-      response, reporting the success rate obtained.
-    required_caveat: ""
+      Already lifted — a published evaluation on a hardened range with active monitoring and
+      real-time incident response, reporting the success rate obtained.
+    required_caveat: >-
+      Self-interested source: the authors present their own small local model as matching a
+      frontier model at defence. A single-version preprint, with no independent replication found.
+      And one evaluation existing is not a measured state of the world: it lifts the lock on the
+      measuring instrument, nothing more.
     bypass_verdict: lock
     status: admitted
     note: >-
-      Type is `not-tested`: this entry does not assert that defended systems hold. It asserts that
-      nobody has measured it. That is the eighth category of the typology, and it is the honest
-      answer here.
+      CORRECTED on 2026-10-29. As published, this entry stated that no evaluation on an actively
+      defended range had been found as of 2026-09-26. That was wrong: the evaluation above was
+      published on 2026-04-27, five months before our snapshot date, and our initial search had
+      missed it. This is the second entry falsified by a publication that predated our own writing
+      of it, after VR-08. The correction is recorded rather than quietly applied, and the
+      identifier is kept so that the correction stays visible.
+      The condition in `what_would_lift_it` was written in advance and is satisfied literally, so
+      it is not reinterpreted now that we can see what satisfies it — narrowing a lift condition
+      after the fact is the goalpost-moving this method exists to prevent. Type stays `not-tested`:
+      it records what the lock was, which was a lock on the measuring instrument, not a claim that
+      defended systems hold. Nobody has now measured that they do either.
+
+  - id: VR-13
+    lock: >-
+      "the act of decoding the hidden messages is still obvious if you monitor the tool calls of
+      the decoding model" — restricted here, on the source's own evidence, to the case where the
+      decoder has to measure a rendered image
+    type: defensive-barrier
+    harm: "coordination between AI agents that the operators monitoring them cannot observe"
+    lock_source:
+      ref: >-
+        Kezins, Chan B., Reynoso K., Chua J., How does Fable 5.1 hide messages in images?
+        (LessWrong)
+      date: 2026-10-21
+      nature: primary
+      self-interested: no
+      licence: "not stated on the page"
+    state_as_of: 2026-10-21
+    state_source: >-
+      Same post: the published transcript excerpts show the decoding model writing code, measuring
+      the image and exposing its measurement reasoning in the trace. The authors state they do not
+      claim the capability is currently dangerous, for that reason.
+    lever_holder: >-
+      the operators who monitor their agents' tool calls, and the platforms that expose those calls
+    what_would_lift_it: >-
+      A published result in which a decoder recovers the message with no measurement step that a
+      monitor of its tool calls could see, or a measured detection rate, for a monitor that sees
+      those tool calls, showing that such a monitor misses the operation.
+    required_caveat: >-
+      Laboratory only, and the defence itself is not measured: no detection rate, no monitor put to
+      the test — it is an observation of transcripts, not a result. What is visible is the act of
+      decoding, not the presence of a message, which the source reports as surprisingly hard to
+      spot. The source's recovery rate counts a message as recovered at 90 % string similarity, not
+      exactness, in a setup where the encoder knows it is being asked to hide a message. Not peer
+      reviewed; the authors state they are publishing it for feedback.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      The scope restriction is not optional. The source reports, in a footnote, a case it excluded
+      from the study in which the decoder needs no measurement at all, and there this defence does
+      not apply. Published without its scope, this entry would be false; the restriction claims
+      less than the source does, never more. Stating where a defence stops names what blocks, not
+      a way through: no method is given here, and the encoding families reported by the source are
+      deliberately absent. Two further limits, both deliberate: no link is drawn to the agent
+      incident of July 2026 — four primary sources on that incident describe a textual channel and
+      none documents an exchange of images — and the post's by-line does not match its own citation
+      block, so the citation block is used.
+      Both halves of the lift condition name the monitor this lock names, the one that sees the
+      decoder's tool calls. A defence of this kind is defined by what its monitor has access to,
+      and results measured on a different monitor do not lift it: two publications already report
+      detection for a monitor that sees only the rendered pixels, or only the plain-text messages,
+      and neither concerns the monitor named here.
