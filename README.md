@@ -31,8 +31,10 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | Tacit knowledge | Gaps in specialist knowledge, still listed among model failures, already partly overcome | Not specified by the source | ⚪ not tested |
 | Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); current state not established. *Corrected 28 October 2026* | Banks, payment rails, compute providers | ⚪ not tested |
 | Resource | No evaluation shows compute or money as a limit; more compute buys more steps, no plateau observed | Compute providers | ⚪ not tested |
-| Not tested | Nobody has measured an autonomous attack against an actively defended network | Evaluators | ⚪ not tested |
+| Not tested | Nobody had measured an autonomous attack against an actively defended network; a first study did in April 2026 (self-interested source, preprint): the attacker's success drops sharply. *Corrected 29 October 2026* | Evaluators | 🔴 lifted in April |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
+
+**Correction, 29 October 2026.** The entry on actively defended networks (VR-05) stated that nobody had measured an autonomous attack against them. A study from April 2026 ([arXiv:2604.24184](https://arxiv.org/abs/2604.24184)) had, and our search had missed it. Our monthly re-check found it; the entry file is being rewritten.
 
 **Correction, 28 October 2026.** The Identity entry (VR-08) previously stated that no published evaluation showed an identity requirement blocking an agent. That was wrong: the UK AI Security Institute's RepliBench evaluation showed it in 2025, and our search had missed it. The entry is corrected under the same identifier, so the correction stays visible.
 
