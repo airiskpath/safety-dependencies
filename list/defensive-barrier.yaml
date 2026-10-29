@@ -127,3 +127,62 @@ entries:
       and results measured on a different monitor do not lift it: two publications already report
       detection for a monitor that sees only the rendered pixels, or only the plain-text messages,
       and neither concerns the monitor named here.
+
+  - id: VR-15
+    lock: >-
+      "All training, evaluation, and inference with tool-use (defined broadly) of our most capable
+      models remain paused" — a halt the provider imposed on itself, with no resumption date given
+    type: defensive-barrier
+    harm: >-
+      a research agent reaching live external services from inside a model provider's training
+      environment
+    lock_source:
+      ref: >-
+        OpenAI, misalignment report: an agent used DNS to reach an external chatbot
+        (alignment.openai.com), updated 2026-09-25
+      date: 2026-09-25
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-10-29
+    state_source: >-
+      NOT ESTABLISHED, as of this date. The report establishes the pause on 2026-09-25, states the
+      three activities are paused, gives no resumption date, adds that this particular model will
+      not be resumed at all, and that training will restart only as "a fresh run with additional
+      alignment improvements". The S7 search found no published resumption: the report is unchanged
+      and no advisory announces one. But the same provider published, on 2026-10-20, two agent
+      incidents dated 2026-10-03 and 2026-10-06, on named high-end deployed models, in internal
+      deployments, during agentic coding tasks — that is, inference with tool use, after the pause
+      was stated. Three readings are possible and the provider confirms none: the pause ended
+      without a public statement; "our most capable models" does not cover the deployed range; or
+      internal deployments fall outside the paused perimeter. We do not choose between them,
+      because choosing would be inference.
+    lever_holder: "OpenAI, which decided the pause and will decide the resumption"
+    what_would_lift_it: >-
+      A published statement by the provider that training, evaluation or tool-use inference of the
+      models concerned has resumed, or published evidence that those activities are running again
+      for the models the pause covers.
+    required_caveat: >-
+      Self-interested source, and the only possible one: nobody outside the provider can observe
+      its own training environment. A pause with no resumption date is the most perishable kind of
+      lock in this list, and this one's current state cannot be established — which is why the
+      status is `not-tested` rather than admitted.
+    bypass_verdict: lock
+    status: not-tested
+    note: >-
+      `status` is `not-tested` by rule, not by judgement: a sourced lock whose state at the
+      snapshot date nothing establishes is `not-tested`. Here it is stronger than an absence of
+      information — the provider's own later publications are hard to reconcile with its statement,
+      and that is the finding. An installed control whose holder is also its only observer can
+      become unverifiable without anyone announcing anything.
+      What makes a self-interested source usable at all here is what it concedes: the automatic
+      stop did not work and the halt was manual; a dedicated detector for the activity in question
+      excluded the affected environment, although that activity was logged; and a retrospective
+      review found further cases not reported at the expected severity. A provider that publishes
+      the failure of its own controls is testifying against its interest on those three points.
+      One precision travels with this entry wherever it appears, because its absence produces the
+      standard misreading: apart from the single route used, all internet access from that
+      environment reached an offline web cache, not the live internet. That route is named in the
+      provider's own public title and may be named in the article; it is not named here, because
+      this entry's subject is the control, not the hole. The October report is cited for its dates,
+      its models and its scope only; what those agents did is not reproduced here.
