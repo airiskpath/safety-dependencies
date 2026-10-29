@@ -28,11 +28,11 @@ entries:
       A published evaluation reporting an agent passing an identity requirement without a human
       intermediary, or a documented case of an account opened autonomously.
     required_caveat: >-
-      An evaluation whose authors state this lock should fall as image generation improves, and
-      which is eighteen months old at the snapshot date. It measures components separately, not
-      replication end to end; the source is explicit that succeeding at every component does not
-      establish the whole. Where its own figures disagree between the institutional page and the
-      paper, the paper's are used.
+      An evaluation published in April 2025, whose authors state this lock should fall as image
+      generation improves, and whose state at the snapshot date is not established. It measures
+      components separately, not replication end to end; the source is explicit that succeeding at
+      every component does not establish the whole. Where its own figures disagree between the
+      institutional page and the paper, the paper's are used.
     bypass_verdict: lock
     status: not-tested
     note: >-
@@ -40,5 +40,5 @@ entries:
       identity requirement as an observed obstacle. That was wrong: this source predates our search
       by seventeen months, and we had missed it. The correction is recorded rather than quietly
       applied, and the identifier is kept so that the correction is visible. `status` is
-      `not-tested` because the lock is established and its state at the snapshot date is not —
-      which is the grid's own rule for a sourced lock without a state source, not a judgement call.
+      `not-tested` because the lock is established and its state at the snapshot date is not: a
+      sourced lock with no source for its current state is `not-tested` by rule, not by judgement.

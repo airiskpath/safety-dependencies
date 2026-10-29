@@ -34,7 +34,7 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | Not tested | Nobody has measured an autonomous attack against an actively defended network | Evaluators | ⚪ not tested |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
 
-**Correction, 28 October 2026.** The Identity entry (VR-08) previously stated that no published evaluation showed an identity requirement blocking an agent. That was wrong: the UK AI Security Institute's RepliBench evaluation has shown it since 2025, and our search had missed it. The entry is corrected under the same identifier, so the correction stays visible.
+**Correction, 28 October 2026.** The Identity entry (VR-08) previously stated that no published evaluation showed an identity requirement blocking an agent. That was wrong: the UK AI Security Institute's RepliBench evaluation showed it in 2025, and our search had missed it. The entry is corrected under the same identifier, so the correction stays visible.
 
 **The most frequent answer is "not tested": nobody has checked.** Nobody else publishes that, and it is the most useful line in the list. Lifted locks stay in: a list that shows what has just fallen says more than one that erases it.
 
