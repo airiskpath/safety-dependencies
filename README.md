@@ -36,7 +36,7 @@ This date holds for [the sources we watch](sources-watched.md): it says what we 
 | Duration | Nobody has measured whether an agent can run a long operation undetected | Evaluators | ⚪ not tested |
 | Tacit knowledge | Gaps in specialist knowledge, still listed among model failures, already partly overcome | Not specified by the source | ⚪ not tested |
 | Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); as of 30 October, no publication reports an agent passing it on its own. *Corrected 28 October 2026* | Banks, payment rails, compute providers | 🟢 holds |
-| Resource | No evaluation shows compute or money as a limit, and an October campaign compromised more than a hundred organisations at about 50 dollars per successful intrusion: one investigation, one campaign, not an average | Compute providers | ⚪ no defense, documented |
+| Resource | No evaluation shows compute or money as a limit, and an October campaign compromised more than a hundred organisations, out of more than 1,200 targeted, at about 50 dollars per successful intrusion: one investigation, one campaign, not an average | Compute providers | ⚪ no defense, documented |
 | Not tested | Nobody had measured an autonomous attack against an actively defended network; a first study did in April 2026 (self-interested source, preprint): the attacker's success drops sharply. *Corrected 29 October 2026* | Evaluators | 🔴 lifted in April |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
 
