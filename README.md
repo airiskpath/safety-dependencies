@@ -18,7 +18,9 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | ➕ **Know a defense we missed?** | [Propose a new entry](../../issues/new?template=new-entry.yml) |
 | 🧮 **Check our numbers** | `cd trend && make tendance` — one command, same figures. See [`trend/`](trend/) |
 
-## The list, as of 29 October 2026
+## The list, as of 30 October 2026
+
+This date holds for [the sources we watch](sources-watched.md): it says what we found there, not that nothing happened elsewhere.
 
 | Family | The defense | Who holds it | State |
 |---|---|---|---|
@@ -27,16 +29,18 @@ What stops an AI agent from doing damage is often not in your code. It is a prov
 | Capability | The long chain of steps in a simulated corporate attack scenario | The labs | 🔴 lifted in April |
 | Capability | A simulated industrial network, where the stake is disrupting a physical process | The labs | 🔴 lifted in May |
 | Access | Access controls reserved for trusted users, against help with chemical or biological weapons *(source: the provider itself)* | The provider | 🟢 holds |
-| Installed control | Account termination by the provider, which ended observed intrusion and espionage operations *(source: the provider itself)* | Model providers | 🟢 holds |
-| Installed control | Realistic protections stop a model from extracting its own weights; as of 29 October, no publication reports an agent obtaining weights through production-grade protections (RepliBench, UK AISI, April 2025, which measures this step separately). *New 30 October 2026* | Those who hold the weights | 🟢 holds |
+| Installed control | Account termination by the provider, which ended observed intrusion and espionage operations. It only reaches operations running through an account a provider controls: open-weights models, mixed providers and intermediaries fall outside it *(source: the provider itself; scope corrected 30 October 2026)* | Model providers | 🟢 holds |
+| Installed control | Realistic protections stop a model from extracting its own weights; as of 30 October, no publication reports an agent obtaining weights through production-grade protections (RepliBench, UK AISI, April 2025, which measures this step separately). *New 30 October 2026* | Those who hold the weights | 🟢 holds |
 | Installed control | OpenAI's pause of training, evaluation and tool-use inference of its most capable models, decided after the 20 September incident. No resumption announced, but an OpenAI report of 20 October describes GPT-6 agents working with tools in internal deployments in early October: it cannot be established that the pause holds *(source: the provider itself)*. *New 29 October 2026* | OpenAI | ⚪ not tested |
 | Installed control | When an agent hides a message in an image, the agent decoding it leaves a visible trace in its tool calls, provided it has to analyse the rendered image (lab only, defense not yet measured). *New 29 October 2026* | Those who monitor their agents' tool calls | 🟢 holds |
 | Duration | Nobody has measured whether an agent can run a long operation undetected | Evaluators | ⚪ not tested |
 | Tacit knowledge | Gaps in specialist knowledge, still listed among model failures, already partly overcome | Not specified by the source | ⚪ not tested |
-| Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); as of 29 October, no publication reports an agent passing it on its own. *Corrected 28 October 2026* | Banks, payment rails, compute providers | 🟢 holds |
-| Resource | No evaluation shows compute or money as a limit; more compute buys more steps, no plateau observed | Compute providers | ⚪ not tested |
+| Identity | Models “fail completely” at identity verification, which would close off the financial system without a human intermediary (RepliBench, UK AISI, 2025); as of 30 October, no publication reports an agent passing it on its own. *Corrected 28 October 2026* | Banks, payment rails, compute providers | 🟢 holds |
+| Resource | No evaluation shows compute or money as a limit, and an October campaign compromised more than a hundred organisations at about 50 dollars per successful intrusion: one investigation, one campaign, not an average | Compute providers | ⚪ no defense, documented |
 | Not tested | Nobody had measured an autonomous attack against an actively defended network; a first study did in April 2026 (self-interested source, preprint): the attacker's success drops sharply. *Corrected 29 October 2026* | Evaluators | 🔴 lifted in April |
 | Not tested | The behaviours of the most dangerous actors are missing from the standard attack framework | MITRE, evaluators | ⚪ not tested |
+
+**Correction, 30 October 2026.** The account-termination entry (VR-04) did not state its scope, and the Resource entry (VR-09) ignored an investigation of 19 October. Our 29 October re-check had not looked at the month's wave of attacks; it now does, against [the sources we watch](sources-watched.md).
 
 **Correction, 29 October 2026.** The entry on actively defended networks (VR-05) stated that nobody had measured an autonomous attack against them. A study from April 2026 ([arXiv:2604.24184](https://arxiv.org/abs/2604.24184)) had, and our search had missed it. Our monthly re-check found it; the entry file is being rewritten.
 

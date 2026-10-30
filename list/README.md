@@ -1,6 +1,6 @@
 # The list — a dated snapshot
 
-**As of 29 October 2026.** For each of the eight families of defenses, what is missing today
+**As of 30 October 2026.** For each of the eight families of defenses, what is missing today
 for a named harm to become possible, who holds the lever, and what would count as proof that it
 fell. We call such a defense a **lock**: a defense that still holds.
 

@@ -1,6 +1,6 @@
 # Family: resource — "money, compute, hardware". Lever: compute providers.
 family: resource
-state_as_of: 2026-10-29
+state_as_of: 2026-10-30
 entries:
 
   - id: VR-09
@@ -16,23 +16,43 @@ entries:
       nature: primary
       self-interested: no
       licence: CC BY 4.0
-    state_as_of: 2026-10-29
+    state_as_of: 2026-10-19
     state_source: >-
-      The same paper tests at 10M and 100M tokens and states higher budgets "would likely yield
-      further improvements", describing its own figures as a lower bound. No published evaluation
-      found, as of this date (monthly pass), in either direction: none reporting a resource ceiling
-      that stops an operation, and none documenting an operation's cost as negligible relative to
-      its effect.
+      SECOND BRANCH OF THE LIFT CONDITION MET. The original paper tests at 10M and 100M tokens and
+      states higher budgets "would likely yield further improvements", describing its own figures
+      as a lower bound. Since then: Reuters, 2026-10-19, read on a syndicated full reprint, reports
+      an agent campaign run by a single operator that spent about 5,000 dollars in tokens in total,
+      about 50 dollars per successful intrusion, and compromised more than a hundred organisations
+      out of more than 1,200 targeted, with three named industrial companies and two small firms
+      confirming to the reporters. A cost documented, quantified and negligible relative to its
+      effect, which is what the second branch asks for. The first branch — a published evaluation
+      reporting a resource ceiling that stops an operation — is still unmet.
     lever_holder: "compute providers"
     what_would_lift_it: >-
-      A published evaluation reporting a resource ceiling that stops an operation — or, in the
-      other direction, an operation whose cost is documented as negligible relative to its effect.
+      Met on the second branch — an operation whose cost is documented as negligible relative to
+      its effect. The first branch stands: a published evaluation reporting a resource ceiling that
+      stops an operation.
     required_caveat: >-
-      The figures quoted are laboratory measurements on ranges without active defenders; they say
-      nothing about cost or scale in real environments.
+      The laboratory figures are measurements on ranges without active defenders and say nothing
+      about cost in real environments. The October figures come from one journalistic
+      investigation, read on a syndicated reprint; the amount is the attacker's token spend alone,
+      not the cost of the operation; and one campaign is one observation, not a rate.
     bypass_verdict: lock
-    status: not-tested
+    status: admitted
     note: >-
-      The honest finding is an inversion: where the typology expects a resource lock, the only
-      published measurement shows resources buying capability without a plateau. Nobody has
-      measured where, if anywhere, that stops.
+      WHAT "MET" MEANS HERE, AND IT IS NOT WHAT IT MEANS ELSEWHERE IN THIS LIST. No defence fell.
+      This entry never recorded a lock: it recorded that where the typology expects a resource
+      lock, none exists, and that the measured relation runs the other way. Meeting the second
+      branch confirms that absence instead of ending a protection. Any public wording that labels
+      this entry "lifted" the way VR-02, VR-05 or VR-11 are labelled would tell the reader the
+      opposite of what happened. It should read: no defence in this family, and that is now
+      documented rather than merely unsearched.
+      CORRECTED on 2026-10-30. Our state source of 2026-10-29 said no publication had been found
+      in either direction. That was wrong on the second branch, by ten days. This is the third
+      entry falsified by a publication that predated our own assertion about it, after VR-08 and
+      VR-05 — and it is the entry the reliability ranking had named as the most exposed, for the
+      reason it gave: an absence resting on nothing but our own search.
+      The cause is identifiable and has been turned into a rule. The search was run against
+      "published evaluations", which is the wording of the first branch, while the second branch
+      asks for a documented operation and admits a report. One query was run for a condition that
+      contained two.

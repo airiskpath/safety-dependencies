@@ -1,12 +1,13 @@
 # Family: defensive barrier — "an existing control prevents it". Lever: whoever maintains it.
 family: defensive-barrier
-state_as_of: 2026-10-29
+state_as_of: 2026-10-30
 entries:
 
   - id: VR-04
     lock: >-
       account termination by the provider, which ended the observed operations: accounts were
-      banned and threat information shared with public- and private-sector partners
+      banned and threat information shared with public- and private-sector partners — a defence
+      that reaches only operations running through an account a provider controls
     type: defensive-barrier
     harm: "sustained AI-assisted intrusion, espionage and procurement operations"
     lock_source:
@@ -15,23 +16,46 @@ entries:
       nature: primary
       self-interested: yes
       licence: "not stated on the page"
-    state_as_of: 2026-10-29
+    state_as_of: 2026-10-30
     state_source: >-
       Same report, covering activity from December 2025 to August 2026: the provider states it
-      detected and banned the accounts involved in the cases described. It remains the most recent
-      in that series, and no documented case was found, as of this date (monthly pass), of an
-      operation of comparable scale running to completion without detection or termination.
+      detected and banned the accounts involved in the cases described, and it remains the most
+      recent in that series. Confronted on this date with the agent campaigns published in October
+      2026, the lock is NOT lifted: the four primary sources that document those campaigns say
+      nothing at all about any provider detecting or terminating anything, and silence does not
+      document an absence. What they do document is this defence's perimeter. In none of the four
+      is account termination what ended the operation — one ran for about four weeks and was
+      exposed by an independent researcher, the others by a security vendor or by a targeted
+      platform. And three published facts place campaigns outside the defence's reach: an attack
+      harness its own publisher describes as able to use any AI model, a single campaign mixing two
+      providers' models, and access to models through third-party intermediaries and gateways.
     lever_holder: "the model providers, who operate detection and termination"
     what_would_lift_it: >-
-      A documented case of an operation of comparable scale running to completion on a provider's
-      platform without detection or termination.
-    required_caveat: ""
+      An operation of comparable scale, run through an account a provider controls, that reached
+      its objectives before any action by that provider — established either by the provider or by
+      a published timeline. A campaign conducted beyond any provider's reach does not lift this
+      lock: it falls outside the perimeter the lock states.
+    required_caveat: >-
+      Self-interested source on its own enforcement. And this defence covers less than its name
+      suggests: it reaches only operations that run through a provider-controlled account.
+      Campaigns using open-weights models, mixing providers, or reaching models through
+      intermediaries are outside it, and October 2026 documents all three.
     bypass_verdict: lock
     status: admitted
     note: >-
+      CORRECTED on 2026-10-30, in scope and not in verdict. The lock holds; what was wrong was
+      publishing it without its perimeter, in an entry that serves as our public example of what a
+      lock is. The correction is recorded rather than quietly applied.
+      The lift condition was also mis-posed, and this is the instructive part. As written it asked
+      for an operation documented as running "without detection or termination" — that is, for
+      someone to document a non-event, which only the provider could do, and no provider publishes
+      its own failures to detect. A condition in that shape cannot be met by any third party, so it
+      could never have been met at all. It now asks for something a published timeline can
+      establish.
       Self-interested source, and the strongest possible one on its own enforcement — nobody else
       can observe it. One further finding in the same report names a way through rather than what
-      blocks; it is not retained, and it is not described here.
+      blocks; it is not retained, and it is not described here. Neither are the names of the attack
+      harnesses involved in the October campaigns, nor any access route they used.
 
   - id: VR-05
     lock: >-

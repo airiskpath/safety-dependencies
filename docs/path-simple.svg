@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="t d">
   <title id="t">From the lab to the real world, the second step is the one that holds</title>
-  <desc id="d">Path of attack techniques against AI in the MITRE ATLAS catalogue. Three in four go from idea to lab demonstration, in about eight months, between six and eleven months. Only one in three then goes from lab demonstration to observation in the real world; the median time is estimated at fifty-five months, with no upper bound on the available data.</desc>
+  <desc id="d">Path of attack techniques involving AI, mostly against AI systems, in the MITRE ATLAS catalogue. Three in four go from idea to lab demonstration, in about eight months, between six and eleven months. Only one in three then goes from lab demonstration to observation in the real world; the median time is estimated at fifty-five months, with no upper bound on the available data.</desc>
   <style>
     .s{--bg:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--box:#f1f0eb;--line:#c3c2b7;--pass:#2a78d6;--hard:#eb6834}
     @media (prefers-color-scheme:dark){.s{--bg:#1a1a19;--ink:#fff;--ink2:#c3c2b7;--muted:#898781;--box:#26262a;--line:#4a4a45;--pass:#3987e5;--hard:#d95926}}
@@ -48,7 +48,7 @@
     <text class="lab"  x="547" y="228">in about 55 months</text>
     <text class="small" x="547" y="245">(no known upper bound)</text>
 
-    <text class="note" x="20" y="290">Attack techniques against AI, in the domain's reference catalogue (MITRE ATLAS), which records</text>
-    <text class="note" x="20" y="308">what has been documented, not everything that exists. Median times, 2021-2026.</text>
+    <text class="note" x="20" y="290">Attack techniques involving AI, mostly against AI systems, in the domain's reference catalogue:</text>
+    <text class="note" x="20" y="308">MITRE ATLAS, which records what has been documented, not everything that exists. Median times, 2021-2026.</text>
   </g>
 </svg>
