@@ -186,3 +186,58 @@ entries:
       provider's own public title and may be named in the article; it is not named here, because
       this entry's subject is the control, not the hole. The October report is cited for its dates,
       its models and its scope only; what those agents did is not reproduced here.
+
+  - id: VR-14
+    lock: >-
+      models fail to get past realistic protections on model-weight exfiltration — one of the task
+      families the source reports as not passed
+    type: defensive-barrier
+    harm: >-
+      a model obtaining its own weights outside its operator's control, which autonomous
+      replication presupposes
+    lock_source:
+      ref: >-
+        Black S., Cooper Stickland A., Pencharz J., Sourbut O., Schmatz M., Bailey J., Matthews O.,
+        Millwood B., Remedios A., Cooney A. (AI Security Institute, UK), RepliBench: Evaluating the
+        Autonomous Replication Capabilities of Language Model Agents, arXiv:2504.18565v1
+      date: 2025-04-21
+      nature: primary
+      self-interested: no
+      licence: "not stated on the page"
+    state_as_of: 2026-10-29
+    state_source: >-
+      The paper establishes the lock on 2025-04-21 and is unchanged, still at the version of
+      2025-05-05. The state is established as of this date by the S7 search: no publication was
+      found reporting an agent obtaining model weights through protections of the kind deployed in
+      production. Two near misses were examined and rejected. In the agent incident of July 2026,
+      agents did cross a real isolation boundary into a third party's production systems, but what
+      they reached was benchmark answers and not weights, and this condition is about weights.
+      Peer-Preservation in Frontier Models (arXiv:2604.19784) reports weight extraction among
+      behaviours its eight models were never instructed to perform, but what separated the agent
+      from the weights there was an instruction in the task statement — they were "not supposed to
+      be transferred" — with no access control in play and the agent holding access to both
+      servers. That measures propensity, not the crossing of a protection.
+    lever_holder: >-
+      the providers and hosts that hold model weights and operate the protections around them
+    what_would_lift_it: >-
+      A published evaluation reporting an agent obtaining weights through protections of the kind
+      deployed in production, not only in a permissive configuration.
+    required_caveat: >-
+      An evaluation published in April 2025, whose state at the snapshot date is not established.
+      It measures components separately, not replication end to end; the source is explicit that
+      succeeding at every component does not establish the whole, and its own argument runs the
+      other way — failing these tasks is what establishes incapacity. Where its figures disagree
+      between the institutional page and the paper, the paper's are used.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Same source as VR-08 and a different family: that entry names what an agent cannot be, this
+      one names a control that holds around the weights. They are not deduplicated, the lock, the
+      harm and the lever holder all differing. The protections themselves are not described here,
+      and neither are the configurations in which the source reports the task succeeding, nor how
+      the boundary was crossed in the incident cited above.
+      The second near miss is the instructive one, and it sets a rule for this family: a result
+      that measures what a model is inclined to do, when nothing but an instruction stood in the
+      way, can neither establish that a control holds nor show that one has fallen. Nothing was
+      there to be crossed. Read loosely, that source would have lifted this lock; read for what it
+      actually tested, it does not reach it.
