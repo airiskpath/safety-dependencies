@@ -4,6 +4,8 @@ The date of the list ("as of") is bounded by this file. It says what we found in
 
 Each monthly check has two halves: from each entry to the world (does anything meet its lift condition?), and from the world to the entries (what was published this month, and which entries does it touch?). This list serves the second half.
 
+**7 of these 13 sources are read by hand at each check.** That is the exact measure of what our date owes to someone's attention rather than to a machine. A feed counts only if its depth exceeds the time between two checks.
+
 | Source | Feed, tested 30 October 2026 | Added | Would its feed have flagged the October 2026 wave? |
 |---|---|---|---|
 | Microsoft Security blog | [feed](https://www.microsoft.com/en-us/security/blog/feed/), 10 items | 2026-10-30 | yes, but the window is only about three weeks |
