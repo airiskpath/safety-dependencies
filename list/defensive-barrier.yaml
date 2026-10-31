@@ -265,3 +265,104 @@ entries:
       way, can neither establish that a control holds nor show that one has fallen. Nothing was
       there to be crossed. Read loosely, that source would have lifted this lock; read for what it
       actually tested, it does not reach it.
+
+  - id: VR-16
+    lock: >-
+      the coordinated disclosure embargo, with 71 days between the first report and the release
+      of the fixes — "the coordinated disclosure of these vulnerabilities worked well until
+      2 days ahead of the targeted release date"
+    type: defensive-barrier
+    harm: >-
+      exploitation of a critical vulnerability in widely deployed software during the window
+      between its report and its fix
+    lock_source:
+      ref: >-
+        The PHP Foundation, Today's PHP security release and how we're strengthening PHP security
+        (timeline published by the foundation itself)
+      date: 2026-10-21
+      nature: primary
+      self-interested: yes
+      licence: "not stated on the page"
+    state_as_of: 2026-10-20
+    state_source: >-
+      PARTIALLY LIFTED, two days before the targeted date. The same timeline records that the
+      embargo broke on 2026-10-20, and the foundation brought its release forward by a day in
+      response. Its own verdict on the failure: "the delay was a structural failure, caused by both
+      the security team's decision process and its lack of resources." The channels through which
+      the information escaped are deliberately not recorded here.
+    lever_holder: >-
+      the foundation's security team, and every party bound by the embargo — the foundation names
+      its own decision process and its lack of resources as the cause
+    what_would_lift_it: >-
+      Already lifted at the end of its window — an embargo broken before the coordinated release,
+      established by the timeline of the party that ran it.
+    required_caveat: >-
+      Self-interested source, and reporting against its own interest on the failure. One embargo,
+      one window: 71 days is this case, not a norm. This lock protects a window in ordinary
+      software, and the harm it holds back is not an AI harm; what connects it to this list is on
+      the discovery side, where the same foundation documents AI being used to validate and group
+      incoming reports, with a human deciding.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      The first entry in this list whose lever is held by a process rather than by a laboratory or
+      a provider, and the first where the holder publishes its own failure in its own words. That
+      is why it is admitted despite a self-interested source: a party that calls its own control a
+      structural failure, and names its lack of resources, is testifying against itself.
+      It must not be written that AI found these vulnerabilities. The foundation does not say so: a
+      core developer saw the first signs in 2024, a researcher reported the full impact on
+      2026-08-11, and a model provider independently reported the same root cause. The foundation
+      states that AI validates and groups reports and that a person decides.
+      Neither the three dated leaks nor their channels are described: one of them names where a
+      pre-disclosure signal can be found, which tells a reader what to try rather than what blocks.
+
+  - id: VR-17
+    lock: >-
+      refusal training, which produces an outright refusal in 57 % of the responses tested across
+      27 models — a control that does not survive the removal of the safeguards, and so reaches
+      only models whose weights their publisher still controls
+    type: defensive-barrier
+    harm: "obtaining operational assistance for violent or terrorist purposes from a language model"
+    lock_source:
+      ref: >-
+        Tech Against Terrorism, Press Release: AI TERRORISM BLIND SPOT - First Benchmark Built to
+        Measure It Finds Frontier Models Give Attackers Usable Help
+      date: 2026-07-02
+      nature: primary
+      self-interested: no
+      licence: "not stated on the page"
+    state_as_of: 2026-10-30
+    state_source: >-
+      The statement itself establishes both the control and its boundary on 2026-07-02: an outright
+      refusal rate across the models tested, and models whose safeguards have been removed
+      answering requests the others refuse. S7 search on this date: no vendor publication
+      announcing the removal of refusals from a named model, and no third-party attestation of one,
+      was found. What circulates is a social-media account and a press report whose primary source
+      could not be traced; the orders of magnitude quoted there are not verified and are not used
+      here.
+    lever_holder: >-
+      the laboratories that train the refusals, for the models whose weights they control; for
+      openly distributed weights, nobody
+    what_would_lift_it: >-
+      A published measurement showing that refusal training no longer produces refusals on models
+      whose weights their publisher controls. A model whose safeguards have been removed does not
+      lift this lock: nothing was in place on it, so nothing was crossed, and it falls outside the
+      perimeter the lock states.
+    required_caveat: >-
+      One measurement, on one set of models, on one date, by one organisation. The dividing line is
+      not open weights against closed: the source states this itself, and the figure covers models
+      of both kinds. The same statement reports that around a third of responses gave usable help
+      beyond what a web search easily finds: 57 % is the share of outright refusals, not the share
+      of harm prevented.
+    bypass_verdict: lock
+    status: admitted
+    note: >-
+      Written under the propensity rule, and the rule changed the entry rather than filtering it.
+      The fact initially proposed — two models with their safeguards removed complying with almost
+      every request — measures the absence of a control, not the crossing of one, so it can neither
+      found this lock nor lift it. The lock is the refusal rate; the removal is its boundary.
+      Second entry after VR-04 whose correction is a perimeter: a real defence, held by a named
+      actor, reaching only what that actor still controls. The pattern is now worth naming.
+      No removal method is recorded, and neither are the compliance rates of the models whose
+      safeguards were removed: those measure how useful the bypass is, not how strong the defence
+      is.
